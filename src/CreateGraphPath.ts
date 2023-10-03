@@ -193,7 +193,7 @@ function createGraphPathBase({
           return pixel + additionalPixel === exactPointX
         })
 
-      if (!isExactPointInsidePixelRatio) continue
+      // if (!isExactPointInsidePixelRatio) continue
     }
 
     const value = graphData[index]!.value
