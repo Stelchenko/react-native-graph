@@ -202,7 +202,8 @@ function createGraphPathBase({
       getYInRange(drawingHeight, value, range.y) +
       verticalPadding
 
-    points.push({ x: pixel, y: y })
+    // points.push({ x: pixel, y: y })
+    points.push({ x: pixel, y: isNaN(y) ? 100 : y })
   }
 
   for (let i = 0; i < points.length; i++) {
